@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=Fredericka+the+Great&family=Lato&display=swap');
 
 body {
-    background-color: #FCEBB6;
+    background-image: url(images/fadedroad50.jpg);
+    background-repeat: no-repeat;
     color: #221811;
     font-family: 'Crimson Pro', serif;
 }
@@ -10,10 +11,17 @@ header {
     color: #8C3826;
     background-color: #D2B48C;
     text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+main {
+    padding: 0 2em 2em;
+    display: block;
 }
 
 h1 {
-    line-height: 200%;
+    font-size: 3em;
     font-family: 'Fredericka the Great', cursive;
 }
 
@@ -22,9 +30,31 @@ h2 {
     color:#8C3826;
 }
 
+h3, dt {
+    color: #8C3826
+}
+
+h4 {
+    background-color: #D2B48C;
+    font-size: 1.2em;
+    padding-left: 0.5em;
+    padding-bottom: 0.25em;
+}
+
+dt {
+
+}
+
 nav {
     text-align: center;
     font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav a {
+    text-decoration: none;
 }
 
 footer {
@@ -32,11 +62,34 @@ footer {
     font-size: .60em;
     font-style: italic;
     text-align: center;
+    padding: 1em;
+    border-top: 2px solid #8C3826;
 }
 
 #wrapper {
-    width: 80%;
+    /* width: 80%; */
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 5px 5px #413e3e;
     background-color: #FEFAEB;
     margin-right: auto;
     margin-left: auto;
 }
+
+.details {
+    padding: 0 20%;
+}
+
+#homehero {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img {
+    border-style: none;
+    max-width: 100%;
+    height: auto;
+}
+
+
