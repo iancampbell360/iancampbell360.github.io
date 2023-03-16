@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Karla&family=Playfair+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(216, 192, 135);
+    font-family: 'Karla', 'Helvetica', sans-serif;
+    font-size: 100%;
+}
+
+#wrapper {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: pink;
+    padding: 0;
+}
+
+header {
+    background-color: aqua;
+}
+
+#utilities {
+    
+}
+
+#utilities ul {
+    float: right;
+    background-color: rgb(80, 92, 147);
+}
+
+#utilities ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 1em;
+}
+
+nav {
+    background-color: rgb(134, 93, 172);
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 1em;
+}
+
+main {
+
+}
+
+#sidebar {
+    float: left;
+    padding: 1.5em;
+    background-color: beige;
+    width: 25%;
+    height: 700px;
+}
+
+
+footer {
+    clear: left;
+    padding: 1em;
+    background-color: aqua;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    display: inline;
+    padding-right: 1em;
+}
