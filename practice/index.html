@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Interface/User Experience Web Design</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" href="https://www.usu.edu/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header id="pageHeader">
+        <a href="index.html"><img src="logo.png" alt="Logo"></a>
+    </header>
+
+    <nav id="mainNav">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="table.html">Table Practice</a></li>
+            <li><a href="form.html">Form Practice</a></li>
+
+            <!-- <li>
+                <form id="form" role="search" method="get" action="https://www.google.com/search">
+                    <input type="search" id="query" placeholder="Search Google" size=15 aria-label="Search">
+                    <button>Search</button>
+                </form>
+            </li> -->
+
+            <li>
+                <form id="form" role="search" method="get" action="https://www.google.com/search">
+                    <input type="hidden" name="sitesearch" value="https://pamdupinbryant.github.io/">
+                    <input type="search" id="query" placeholder="Search Pam's Site" size=15 aria-label="Search">
+                    <button>Search</button>
+                </form>
+            </li>
+
+            <li><a href="search.html" aria-label="search"><i class="fa fa-search"></i></a></li>
+
+        </ul>
+    </nav>
+
+    <main id="mainContent">
+        <h2>Practice Files</h2>
+        <p>We will use this site to practice tables, forms, and to insert some new features.</p>
+        <h3><a href="https://developers.google.com/search/docs/beginner/get-started">Google - Beginner SEO</a></h3>
+        <h3><a href="https://developers.google.com/search/docs/advanced/guidelines/get-started">Google - Advanced
+                SEO</a></h3>
+        <h3><a href="https://search.google.com/search-console/welcome">Google Search
+                Console</a></h3>
+        <h3><a href="https://programmablesearchengine.google.com/about/">Google Programmable Search</a></h3>
+    </main>
+
+    <div id="siteSearch">
+        <h3>Find out more</h3>
+        <!-- SiteSearch Google -->
+        <form role="search" method="get" action="https://www.google.com/search">
+            <div id="search">
+                <label for="q">Search:</label>
+                <input id="q" name="q" size="20" maxlength="255" value="" type="text" placeholder="Search...">
+                <input name="domains" value="https://pamdupinbryant.github.io/" type="hidden">
+                <input type="image" src="search.png" alt="Search">
+                <br>
+                <input name="sitesearch" value="" id="www" type="radio" checked="checked">
+                <label for="www">The Web</label>
+                <br>
+                <input name="sitesearch" value="https://pamdupinbryant.github.io/" id="mysite" type="radio">
+                <label for="mysite">This Site</label>
+                <br>
+                <input name="btnG" value="Search" type="submit">
+            </div>
+        </form>
+    </div>
+
+    <!-- <footer id="pageFooter">
+        <ul>
+            <li><a href="http://www.usu.edu/">Utah State University</a></li>
+            <li><a href="http://huntsman.usu.edu/">Huntsman School of Business</a></li>
+            <li><a href="mailto:pam.dupin-bryant@usu.edu">Dr. Pam Dupin-Bryant ©</a></li>
+        </ul>
+    </footer> -->
+
+    <footer id="pageFooter">
+        <ul>
+            <li><a href="https://www.linkedin.com/" aria-label="linkedin"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.facebook.com/" aria-label="facebook"><i class="fab fa-facebook-square"></i></a>
+            </li>
+            <li><a href="https://www.instagram.com/?hl=en" aria-label="instagram"><i
+                        class="fab fa-instagram-square"></i></a></li>
+            <li><a href="https://twitter.com/?lang=en" aria-label="twitter"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li><a href="https://www.snapchat.com/" aria-label="snapchat"><i class="fab fa-snapchat-square"></i></a>
+            </li>
+            <li><a href="mailto:pam.dupin-bryant@usu.edu" aria-label="email"><i class="fas fa-envelope-square"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Practice - UI/UX Web Design</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" href="https://www.usu.edu/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header id="pageHeader">
+        <a href="index.html"><img src="logo.png" alt="Logo"></a>
+    </header>
+
+    <nav id="mainNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="table.html">Table Practice</a></li>
+            <li class="current"><a href="form.html">Form Practice</a></li>
+            <li><a href="search.html" aria-label="search"><i class="fa fa-search"></i></a></li>
+        </ul>
+    </nav>
+
+    <main id="mainContent">
+
+        <h2>Form Practice</h2>
+        <form name="PracticeForm" method="post" action="mailto:pam.dupin-bryant@usu.edu" enctype="text/plain">
+            <fieldset>
+                <legend>Student Information</legend>
+                <p>
+                    <label for="yourname">Enter your Name:</label>
+                    <input type="text" name="yourname" id="yourname" value="Pam Dupin-Bryant" tabindex="1">
+                </p>
+
+                <p>
+                    <input type="checkbox" name="studentUSU" id="studentUSU" checked="checked" tabindex="2">
+                    <label for="studentUSU">I am a student at USU.</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" name="grad" id="grad" tabindex="3">
+                    <label for="grad">I will graduate this year - hooray!</label>
+                </p>
+
+                <p>I am a student at the following USU campus:</p>
+                <p>
+                    <input type="radio" name="site" id="bc" value="bc">
+                    <label for="bc">Brigham City</label>
+                    <br>
+                    <input type="radio" name="site" id="logan" value="logan" checked="checked" tabindex="4">
+                    <label for="logan">Logan</label>
+                    <br>
+                    <input type="radio" name="site" id="slc" value="slc">
+                    <label for="slc">Salt Lake City</label>
+                    <br>
+                    <input type="radio" name="site" id="tooele" value="tooele">
+                    <label for="tooele">Tooele</label>
+                    <br>
+                </p>
+
+                <p>
+                    <label for="rank">Select your Current Academic Rank.</label>
+                    <select name="rank" id="rank" size="1" tabindex="5">
+                        <!--change to 5 and multiple="multiple" use ctrl key to select-->
+                        <option>Freshman</option>
+                        <option>Sophomore</option>
+                        <option>Junior</option>
+                        <option selected="selected">Senior</option>
+                        <option>Graduate Student</option>
+                    </select>
+                </p>
+
+                <!-- HTML 5 Form Elements -->
+                <!-- <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                </p>
+
+                <p>
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" name="birthday" id="birthday">
+                </p>
+
+                <p>
+                    <label for="favcolor">Favorite Color:</label>
+                    <input type="color" name="favcolor" id="favcolor">
+                </p>
+
+                <p>
+                    <label for="rate">Rate your experience:</label>
+                    &nbsp; &nbsp;Terrible <input type="range" name="rate" id="rate">Fantastic
+                </p>
+
+                <p><label for="feedback">Please share your comments and feedback with Pam.</label></p>
+                <p><textarea name="feedback" rows="10" cols="40" id="feedback" tabindex="6"></textarea></p>
+
+                <p><input type="submit" tabindex="7"></p>
+                <p><input type="submit" value="OK - Submit my data!" tabindex="8"></p>
+
+                <p><input type="reset" tabindex="9" /></p> -->
+
+                <!-- <button type="submit" tabindex="10">
+                    <img src="mail.png" alt="mail"><br>
+                    Email Submission<br>
+                    Proceed with Caution!
+                </button> -->
+
+            </fieldset>
+        </form>
+    </main>
+
+    <div id="siteSearch">
+        <h3>Find out more</h3>
+        <!-- SiteSearch Google -->
+        <form role="search" method="get" action="http://www.google.com/search">
+            <div id="search">
+                <label for="q">Search:</label>
+                <input id="q" name="q" size="20" maxlength="255" value="" type="text" placeholder="Search...">
+                <input name="domains" value="https://pamdupinbryant.github.io" type="hidden">
+                <input type="image" src="search.png" alt="Search">
+                <br>
+                <input name="sitesearch" value="" id="www" type="radio" checked="checked">
+                <label for="www">The Web</label>
+                <br>
+                <input name="sitesearch" value="https://pamdupinbryant.github.io" id="mysite" type="radio">
+                <label for="mysite">This Site</label>
+                <br>
+                <input name="btnG" value="Search" type="submit">
+            </div>
+        </form>
+    </div>
+
+    <footer id="pageFooter">
+        <ul>
+            <li><a href="http://www.usu.edu/">Utah State University</a></li>
+            <li><a href="http://huntsman.usu.edu/">Huntsman School of Business</a></li>
+            <li><a href="mailto:pam.dupin-bryant@usu.edu">Dr. Pam Dupin-Bryant ©</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

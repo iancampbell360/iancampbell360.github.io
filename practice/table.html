@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Practice - UI/UX Web Design</title>
+    <link href="main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="icon" href="https://www.usu.edu/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <header id="pageHeader">
+        <a href="index.html"><img src="logo.png" alt="Logo"></a>
+    </header>
+
+    <nav id="mainNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="table.html">Table Practice</a></li>
+            <li><a href="form.html">Form Practice</a></li>
+            <li><a href="search.html" aria-label="search"><i class="fa fa-search"></i></a></li>
+        </ul>
+    </nav>
+
+    <main id="mainContent">
+        <h2>Table Practice</h2>
+
+        <table class="schedule">
+            <caption>Spring Schedule</caption>
+            <tr>
+                <th>Index Number</th>
+                <th>Title</th>
+            </tr>
+            <tr>
+                <td>DATA 3330</td>
+                <td>Database Management</td>
+            </tr>
+            <tr>
+                <td>DATA 3500</td>
+                <td>Intro to Python Programming</td>
+            </tr>
+            <tr>
+                <td>DATA 3400</td>
+                <td>Data Visualization with Tableau</td>
+            </tr>
+            <tr>
+                <td>IS 4250</td>
+                <td>Data Analytics and Information Systems Internship</td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+
+        <table class="plan">
+            <caption>Lesson Plan</caption>
+            <tr>
+                <td id="logo"></td>
+                <th>In Class</th>
+                <th>Homework</th>
+            </tr>
+            <tr>
+                <th class="right">Monday</th>
+                <td>HTML Basics</td>
+                <td>Create simple web page</td>
+            </tr>
+            <tr>
+                <th class="right">Tuesday</th>
+                <td>CSS Basics</td>
+                <td>Style simple web page</td>
+            </tr>
+            <tr>
+                <th class="right">Wednesday</th>
+                <td>HTML Advanced</td>
+                <td>Create advanced web page</td>
+            </tr>
+            <tr>
+                <th class="right">Thursday</th>
+                <td>CSS Advanced</td>
+                <td>Style advanced web page</td>
+            </tr>
+            <tr>
+                <th class="right">Friday</th>
+                <td colspan="2" id="center">Quiz</td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+
+        <table class="time">
+            <caption>Time Sheet</caption>
+            <thead>
+                <tr>
+                    <th id="day">Day</th>
+                    <th id="hours">Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td headers="day">Monday</td>
+                    <td headers="hours">4</td>
+                </tr>
+                <tr>
+                    <td headers="day">Tuesday</td>
+                    <td headers="hours">3</td>
+                </tr>
+                <tr>
+                    <td headers="day">Wednesday</td>
+                    <td headers="hours">5</td>
+                </tr>
+                <tr>
+                    <td headers="day">Thursday</td>
+                    <td headers="hours">3</td>
+                </tr>
+                <tr>
+                    <td headers="day">Friday</td>
+                    <td headers="hours">3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td headers="day">Total</td>
+                    <td headers="hours">18</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+    <div id="siteSearch">
+        <h3>Find out more</h3>
+        <!-- SiteSearch Google -->
+        <form role="search" method="get" action="http://www.google.com/search">
+            <div id="search">
+                <label for="q">Search:</label>
+                <input id="q" name="q" size="20" maxlength="255" value="" type="text" placeholder="Search...">
+                <input name="domains" value="https://pamdupinbryant.github.io/" type="hidden">
+                <input type="image" src="search.png" alt="Search">
+                <br>
+                <input name="sitesearch" value="" id="www" type="radio" checked="checked">
+                <label for="www">The Web</label>
+                <br>
+                <input name="sitesearch" value="https://pamdupinbryant.github.io/" id="mysite" type="radio">
+                <label for="mysite">This Site</label>
+                <br>
+                <input name="btnG" value="Search" type="submit">
+            </div>
+        </form>
+    </div>
+
+    <footer id="pageFooter">
+        <ul>
+            <li><a href="http://www.usu.edu/">Utah State University</a></li>
+            <li><a href="http://huntsman.usu.edu/">Huntsman School of Business</a></li>
+            <li><a href="mailto:pam.dupin-bryant@usu.edu">Dr. Pam Dupin-Bryant ©</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,269 @@
+body {
+	display: grid;
+	grid-template-areas:
+		"header header header"
+		"nav main search"
+		"footer footer footer";
+	grid-template-rows: 100px 1fr 60px;
+	grid-template-columns: 15% 1fr 20%;
+	height: 100vh;
+	font-family: Arial, Helvetica, sans-serif;
+	/* width: 80%; */
+	margin: 0 auto;
+}
+
+header, footer, main, div {
+	padding: 20px;
+}
+
+nav {
+	padding: 10px;
+}
+
+/* Styles for the table schedule */
+
+/*table.schedule {
+	border-collapse: collapse;
+	border-width: 6px;
+	border-spacing: 2px;
+	border-style: double;
+	border-color: gray;
+	background-color: white;
+	}
+
+table.schedule th{
+	border-width: 6px;
+	padding: 10px;
+	border-style: double;
+	border-color: #036;
+	background-color: white;
+	text-align: center;
+	font-size: 150%;
+	}
+
+table.schedule td {
+	border-width: 1px;
+	padding: 5px;
+	border-style: inset;
+	border-color: gray;
+	background-color: #D8D8D8;
+	text-align: center;
+	font-size: 120%;
+	}
+
+table.schedule caption {
+	color: #036;
+	padding: 20px;
+	font-size: 150%;
+	}	*/
+
+/* Styles for the table plan */
+
+/* table.plan {
+	border-collapse: collapse;
+	border: 4px solid #036;
+	}
+	
+table.plan th	{
+	font-style: italic;
+	font-weight: bold;
+	padding: 8px;
+	}	
+
+#logo {
+	background-image: url(usulogo.jpg);
+	background-repeat: no-repeat;
+	background-color: rgb(0, 52, 102);
+	}
+
+.right	{
+	text-align: right
+		}
+
+table.plan td	{
+	color: #036;
+	border-style: solid;
+	border-width: thin;
+	padding: 8px;
+	}
+
+#center {
+	text-align: center;
+	background-color: #D8D8D8;
+	}
+
+ table.plan caption {
+	caption-side: bottom;
+	color: #036;
+	padding: 10px;
+	font-size: 150%;
+	}	 */
+
+/* Styles for the table time */
+
+/*table.time {
+	width: 200px;
+	}
+
+table.time caption {
+	font-size: 125%;
+	font-weight: bold;
+	padding-bottom: 3%;
+	}	
+
+table.time thead {
+	background-color: #eaeaea;
+		}
+		
+table.time tbody {
+	font-size: 75%;
+		}
+		
+table.time tbody td {
+	border-bottom: 1px #003 dashed;
+	font-weight: bold;
+	text-align: center;
+		}	
+		
+table.time tfoot {
+	background-color: #eaeaea;;
+	font-weight: bold;
+	text-align: center;
+		}	*/
+
+/* Styles */
+header {
+	background-color: #333;
+}
+
+nav, div {
+	background-color: #C0C0C0;
+}
+
+#pageHeader {
+	grid-area: header;
+}
+
+#pageFooter {
+	grid-area: footer;
+}
+
+#mainContent {
+	grid-area: main;
+}
+
+#mainNav {
+	grid-area: nav;
+}
+
+#siteSearch {
+	grid-area: search;
+}
+
+#mainNav a {
+	display: block;
+	padding: 3px;
+	text-decoration: none;
+	color: #000;
+}
+
+#mainNav ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#mainNav ul li {
+	margin-top: 4px;
+}
+
+#mainNav ul li a:hover {
+	color: #fff;
+	background-color: #ccc;
+}
+
+#mainNav .current a {
+	color: #fff;
+	background-color: #333;
+	border-radius: 2px;
+}
+
+main h2 {
+	margin: 0;
+	color: #036;
+}
+
+#search {
+	padding: 5px 0;
+	line-height: 175%;
+}
+
+#siteSearch h3 {
+	margin-top: 4px;
+}
+
+footer {
+	padding: .5em 1em;
+	border-top: 1px solid #999;
+	text-align: center;
+}
+
+footer ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+footer li {
+	display: inline;
+	margin-right: 1em;
+}
+
+footer li a {
+	text-decoration: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+	body {
+		grid-template-areas:
+			"header header"
+			"nav nav"
+			"main main"
+			"footer footer";
+		grid-template-rows: 100px 60px 1fr 60px;
+		grid-template-columns: 15% 1fr;
+		width: 100%;
+	}
+
+	#siteSearch {
+		display: none;
+	}
+
+	nav {
+		position: sticky;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		padding-top: 15px;
+	}
+
+	nav ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	nav li {
+		display: inline;
+		float: left;
+		padding-right: 15px;
+	}
+
+	footer li {
+		font-size: 75%;
+	}
+}
+
+/* end */
