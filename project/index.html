@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Man of Measure - A community approach to grounded self-development</title>
     <link rel="stylesheet" href="project.css">
+    <link rel="icon" href="favicon.svg" type="image/x-icon">
+    <script src="js/jquery-3.6.4.min.js"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -16,13 +18,14 @@
             </ul>
         </div>
         <header>
-            <div id="logo" class="desktop"></div>
-            <a href="#menu" class="navicon">&#9776;</a>
-                <a href="index.html" id=""><h1>Man of Measure</h1></a>
+            <div id="logo"><img src="images/logo.svg" width="80"></div>
+            <a href="index.html" id=""><h1>Man of Measure</h1></a>
             <div id="tagline">A community approach to grounded self-development.</div>
+            <a href="#menu" class="navicon" onclick="
+            document.getElementById('menu').style.display = 'flex';">&#9776;</a>
         </header>
-        <nav id="menu">
-            <ul>
+        <nav>
+            <ul id="menu">
                 <li><a>Home</a></li>
                 <li><a href="#">Library</a></li>
                 <li><a href="#">Resources</a></li>
@@ -40,7 +43,10 @@
         
         <main>
             <div id="welcome">
-                <p>This site is kind of like Skillshare, but for forgotten skills and life lessons.</p>    
+                <h2>Hello there!</h2>
+                <p>Yes, you!</p>
+                <p>Wondering what this site is all about?</p>
+                <p>We're kind of like Skillshare, but for forgotten skills and life lessons.</p>    
                 <p>What sets us apart is the kind of people who contribute here. If we were a garden, we would have measured boundaries, deep roots, and fruitful vines. You can decide for yourself whether that's worth anything.</p>
                 <p>We invite you to browse our library of shared learning, add to it by sharing your own learning, or request that someone share some learning you lack.</p>
                 <p>Help us build a community that builds individuals.</p>
