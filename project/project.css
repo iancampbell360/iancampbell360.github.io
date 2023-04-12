@@ -42,27 +42,34 @@ header a:hover {color: #9A3046;}
 #logo {
     padding-right: 0;
     padding-top: 0.1em;
+    width: 30%;
 }
 
 #identity {
     padding: 0 10px;
 }
 
-.navicon {
+#navicon {
     padding-right: 10px;
-    font-size: 2em;
+    font-size: 3em;
+}
+
+#xicon {
+    padding-right: 10px;
+    font-size: 3em;
+    display: none;
 }
 
 h1 {
     font-family: 'Playfair Display', 'Georgia', 'serif';
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin: 0;
     /* background-color: rgb(153, 167, 212); */
 }
 
 #tagline {
     /* background-color: rgb(153, 167, 212); */
-    font-size: 0.7em;
+    font-size: 0.8em;
 /*     padding-left: 60px;
     padding-right: 10px; */
 }
@@ -90,6 +97,7 @@ h1 {
 
 nav {
     /* background-color: rgb(134, 93, 172); */
+    
 }
 
 nav a {
@@ -103,7 +111,9 @@ nav a:link {
 nav a:visited {color: #444444;}
 nav a:hover {color: #536604;}
 
-nav ul {
+#menu {
+    /* background-color: white;
+    position: absolute; */
     display: none;
     flex-direction: column;
     margin: 0;
@@ -115,7 +125,7 @@ nav ul {
     /* font-family: 'Playfair Display', 'Georgia', 'serif' */
 }
 
-nav ul li {
+#menu li {
     list-style-type: none;
     display: inline;
     padding: 0.5em;
