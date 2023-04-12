@@ -26,6 +26,10 @@ body a:hover {color: #9A3046;}
 header {
     border-bottom: 1px solid #bcbcbc;
     padding-bottom: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 header a {
@@ -36,30 +40,31 @@ header a:visited {color: #536604;}
 header a:hover {color: #9A3046;}
 
 #logo {
-    display: inline;
-    padding: 0.3em;
-    float: left;
+    padding-right: 0;
+    padding-top: 0.1em;
+}
+
+#identity {
+    padding: 0 10px;
 }
 
 .navicon {
-    display: inline;
-    padding: 0.3em;
-    float: left;
+    padding-right: 10px;
     font-size: 2em;
 }
 
 h1 {
     font-family: 'Playfair Display', 'Georgia', 'serif';
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 0;
     /* background-color: rgb(153, 167, 212); */
 }
 
 #tagline {
     /* background-color: rgb(153, 167, 212); */
-    font-size: 0.8em;
-    padding-left: 60px;
-    padding-right: 10px;
+    font-size: 0.7em;
+/*     padding-left: 60px;
+    padding-right: 10px; */
 }
 
 #utilities {
@@ -191,6 +196,9 @@ footer ul li {
     
     .desktop {
         display: inline;
+    }
+    h1 {
+        font-size: 4em;
     }
 }
 

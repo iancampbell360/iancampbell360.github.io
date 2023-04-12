@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="project.css">
     <link rel="icon" href="favicon.svg" type="image/x-icon">
     <script src="js/jquery-3.6.4.min.js"></script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-28RVJFSK3Y"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-28RVJFSK3Y');
+    </script>
+
 </head>
 <body>
     <div id="wrapper">
@@ -19,8 +30,10 @@
         </div>
         <header>
             <div id="logo"><img src="images/logo.svg" width="50"></div>
-            <a href="index.html" id=""><h1>Man of Measure</h1></a>
-            <div id="tagline">A community approach to grounded self-development.</div>
+            <div id="identity">
+                <a href="index.html" id=""><h1>Man of Measure</h1></a>
+                <div id="tagline">A community approach to grounded self-development.</div>
+            </div>
             <a href="#menu" class="navicon" onclick="
             document.getElementById('menu').style.display = 'flex';">&#9776;</a>
         </header>
