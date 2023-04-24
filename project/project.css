@@ -123,11 +123,12 @@ nav a:hover {color: #536604;}
 
 #menu li {
     list-style-type: none;
-    padding: 0.5em;
+    padding: 1em;
     text-align: center;
     margin: auto;
     /* width: 90%; */
     border-bottom: 1px solid #bcbcbc;
+
 }
 
 
@@ -203,7 +204,7 @@ footer ul li {
         display: inline;
     }
     h1 {
-        font-size: 4em;
+        font-size: 2em;
     }
 }
 
