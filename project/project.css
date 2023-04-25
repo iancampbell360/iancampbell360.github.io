@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&family=Karla&family=Playfair+Display&display=swap');
 
-/* greens in logo, darkest to lightest: 455111, 3E5110, 536604, 506218, 476005, 516B00, 617704, 748220, 617704, 748708, 7F8710, 72840B, 8C9914 */
+/* greens in logo, darkest to lightest: 455111, 3E5110, 536604, 506218, 476005, 516B00, 748220, 617704, 748708, 7F8710, 72840B, 8C9914 */
 
 * {
     box-sizing: border-box;
@@ -13,10 +13,17 @@ body {
     color: #444444;
 }
 
-body a {text-decoration-line: none;}
-body a:link {color: #536604;}
+body a {text-decoration: none;
+}
+body a:link {color: #536604;
+text-underline-position: under;
+}
 body a:visited {color: #536604;}
-body a:hover {color: #9A3046;}
+body a:hover {
+    text-decoration-line: overline underline;
+    text-decoration-color: #bcbcbc;
+    text-underline-position: under;
+}
 
 #wrapper {
     /* background-color: rgb(235, 173, 173); */
@@ -24,7 +31,6 @@ body a:hover {color: #9A3046;}
 }
 
 header {
-    border-bottom: 1px solid #bcbcbc;
     padding-bottom: 0.5em;
     display: flex;
     flex-direction: row;
@@ -41,16 +47,19 @@ header a:hover {color: #9A3046;}
 
 #logo {
     padding-right: 0;
-    padding-top: 0.1em;
-    width: 30%;
+    padding-top: 0;
+    width: 80px;
 }
 
 #identity {
     padding: 0 10px;
+    width: 250px;
+    text-align: center;
 }
 
 #navicon {
     padding-right: 10px;
+    padding-left: 10px;
     font-size: 3em;
 }
 
@@ -58,6 +67,7 @@ h1 {
     font-family: 'Playfair Display', 'Georgia', 'serif';
     font-size: 1.5em;
     margin: 0;
+    /* font-weight: lighter; */
     /* background-color: rgb(153, 167, 212); */
 }
 
@@ -72,36 +82,16 @@ h1 {
     display: none;
 }
 
-#utilities ul {
-    /* background-color: rgb(80, 92, 147); */
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: stretch;
-}
-
-#utilities ul li {
-    list-style-type: none;
-    padding: 0.5em;
-    margin: auto;
-    background-color: rgb(80, 92, 147);
-}
-
-#utilities a {text-decoration-line: none;}
-#utilities a:link {color: #fff;}
-#utilities a:visited {color: #fff;}
-#utilities a:hover {color: #9A3046;}
-
 nav {
-    /* background-color: rgb(134, 93, 172); */
+    border-top: 1px solid #bcbcbc;
+    background-color: rgb(255, 255, 255, 0.9);
 }
 
 nav a {
     font-weight: lighter;
     display: block;
     color: #536604;
+    text-decoration: none;
 }
 nav a:link {
     color: #444444;
@@ -130,9 +120,6 @@ nav a:hover {color: #536604;}
     border-bottom: 1px solid #bcbcbc;
 
 }
-
-
-
 
 main {
     padding: 0 0 2em;
@@ -196,21 +183,192 @@ footer ul li {
 
 /* Medium Screen Size */
 @media screen and (min-width: 600px) {
-    .mobile {
+    .mobile {display: none;}
+    .desktop {display: inline;}
+
+    #wrapper {
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    header {
+        padding-bottom: 0.5em;
+        display: block;
+    }
+    
+    #logo {
+        padding-right: 10px;
+        margin: 0;
+        /* If you want the overlap: */
+        /* width: 175px; */
+        /* If you don't want the overlap: */
+        width: 130px;
+        float: left;
+    }
+    
+    #identity {
+        margin: 30px 0 10px;
+        width: 90%;
+        height: 90px;
+        text-align: left;
+    }
+    
+    #navicon {
         display: none;
     }
     
-    .desktop {
-        display: inline;
-    }
     h1 {
-        font-size: 2em;
+        font-size: 2.5em;
+        font-weight: lighter;
+        /* background-color: rgb(153, 167, 212); */
     }
+    
+    #tagline {
+        /* background-color: rgb(153, 167, 212); */
+        font-size: 1em;
+    }
+    
+    /* #utilities {
+        display: none;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        font-size: 0.8em;
+    }
+    
+    #utilities ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+    
+    #utilities ul li {
+        list-style-type: none;
+        padding: 0.5em;
+        margin: 5px;
+        background-color: #536604;
+        border-radius: 3px;
+    }
+
+    #utilities ul li:hover {
+        background-color: #617704;
+    }
+    
+    #utilities a {text-decoration-line: none;}
+    #utilities a:link {color: #fff;}
+    #utilities a:visited {color: #fff;}
+    #utilities a:hover {color: #fff;} */
+    
+    nav {
+        /* background-color: rgb(134, 93, 172); */
+        border-bottom: 1px solid #bcbcbc;
+        position: sticky;
+        top: 0;
+    }
+    
+    nav a {
+        font-weight: lighter;
+        /* display: block; */
+        color: #536604;
+    }
+    nav a:link {
+        color: #444444;
+    }
+    nav a:visited {color: #444444;}
+    nav a:hover {color: #536604;}
+    
+    #menu {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+
+        font-size: 1.25em;
+        text-transform: uppercase;
+    }
+    
+    #menu li {
+        padding: 0.5em;
+        border: none;
+    
+    }
+    
+    
+    
+    
+    main {
+        padding: 0 0 2em;
+    }
+    
+    #welcome {
+        margin: 1em auto;
+        padding: 0 1em 1em;
+        border: 1px solid #bcbcbc;
+        border-left: 7px solid #536604;
+        border-right: 7px solid #536604;
+        text-align: justify;
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        /* box-shadow: -3px 3px 0px 0px rgba(68, 68, 68, .2); */
+    }
+    
+    #sidebar {
+        display: none;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        padding: 0.5em;
+    }
+    
+    form label, fieldset label {
+        margin-top: 0.5em;
+    }
+    
+    form input, form textarea, fieldset input, fieldset textarea {
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    
+    footer {
+        clear: left;
+        padding: 1em;
+        background-color: aqua;
+    }
+    
+    footer ul {
+        list-style-type: none;
+    }
+    
+    footer ul li {
+        display: inline;
+        padding-right: 1em;
+    }
+    
 }
 
 /* Large Screen Size */
 @media screen and (min-width: 1024px) {
-    
+    h1 {
+        font-size: 3em;
+    }
+
     #wrapper {
         display: grid;
         grid-template:
@@ -220,6 +378,9 @@ footer ul li {
             "sidebar main"
             "footer footer"
             / 200px; 
+        width: 75%;
+        margin-right: auto;
+        margin-left: auto; 
     }
 
     #utilities {
@@ -244,6 +405,167 @@ footer ul li {
 
     footer {
         grid-area: footer;
+    }
+
+    
+    
+    header {
+        padding-bottom: 0.5em;
+        display: block;
+    }
+    
+    #logo {
+        padding-right: 10px;
+        margin-top: 10px;
+        /* If you want the overlap: */
+        /* width: 175px; */
+        /* If you don't want the overlap: */
+        width: 175px;
+        float: left;
+    }
+    
+    #identity {
+        margin: 30px 0 10px;
+        width: 90%;
+        height: 90px;
+        text-align: left;
+    }
+    
+    #navicon {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 2.5em;
+        font-weight: lighter;
+        /* background-color: rgb(153, 167, 212); */
+    }
+    
+    #tagline {
+        /* background-color: rgb(153, 167, 212); */
+        font-size: 1em;
+    }
+    
+    #utilities {
+        display: none;
+    }
+    
+    #utilities ul {
+        /* background-color: rgb(80, 92, 147); */
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+    
+    #utilities ul li {
+        list-style-type: none;
+        padding: 0.5em;
+        margin: auto;
+        background-color: rgb(80, 92, 147);
+    }
+    
+    #utilities a {text-decoration-line: none;}
+    #utilities a:link {color: #fff;}
+    #utilities a:visited {color: #fff;}
+    #utilities a:hover {color: #9A3046;}
+    
+    nav {
+        /* background-color: rgb(134, 93, 172); */
+        border-top: 1px solid #bcbcbc;
+        border-bottom: 1px solid #bcbcbc;
+    }
+    
+    nav a {
+        font-weight: lighter;
+        /* display: block; */
+        color: #536604;
+    }
+    nav a:link {
+        color: #444444;
+    }
+    nav a:visited {color: #444444;}
+    nav a:hover {color: #536604;}
+    
+    #menu {
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 0;
+
+        font-size: 1.25em;
+        text-transform: uppercase; */
+    }
+    
+    #menu li {
+        /* padding: 0.5em;
+        border: none; */
+    
+    }
+    
+    
+    
+    
+    main {
+        /* padding: 0 0 2em; */
+    }
+    
+    #welcome {
+        /* margin: 1em auto;
+        padding: 0 1em 1em;
+        border: 1px solid #bcbcbc;
+        border-left: 7px solid #536604;
+        border-right: 7px solid #536604;
+        text-align: justify; */
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+        /* box-shadow: -3px 3px 0px 0px rgba(68, 68, 68, .2); */
+    }
+    
+    #sidebar {
+        display: grid;
+    }
+    
+    form {
+        /* display: flex;
+        flex-direction: column;
+        width: auto; */
+    }
+    
+    fieldset {
+        /* display: flex;
+        flex-direction: column;
+        width: auto;
+        padding: 0.5em; */
+    }
+    
+    form label, fieldset label {
+        /* margin-top: 0.5em; */
+    }
+    
+    form input, form textarea, fieldset input, fieldset textarea {
+        /* margin-top: 0.5em;
+        margin-bottom: 0.5em; */
+    }
+    
+    footer {
+        /* clear: left;
+        padding: 1em;
+        background-color: aqua; */
+    }
+    
+    footer ul {
+        /* list-style-type: none; */
+    }
+    
+    footer ul li {
+        /* display: inline;
+        padding-right: 1em; */
     }
 }
 
