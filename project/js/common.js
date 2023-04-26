@@ -1,3 +1,28 @@
+/* Search Functionality */
+
+/* function openSearch() {
+    document.getElementById('search').style.display = 'flex';
+    document.getElementById('search').slideToggle();
+}
+function closeNav() {
+    document.getElementById('menu').style.display = 'none';
+    document.getElementById("menu").style.width = "0%";
+    document.getElementById('navicon').style.display = 'inline';
+    document.getElementById('xicon').style.display = 'none';    
+} */
+
+$(document).ready(function(){
+    $('#searchicon').click(function(){
+        $('#search').slideToggle(
+            function(){
+                $('#searchicon').html('&#10005;');
+            }, function(){
+                $('#searchicon').html('&#128269;');
+            }
+        );
+    })
+});
+
 /* Mobile Menu */
 $(document).ready(function(){
     $('#navicon').click(function(){
