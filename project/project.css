@@ -8,21 +8,24 @@
 
 body {
     background-color: #fff;
+    /* background: linear-gradient(to bottom right, #fff, #fcf7eb, #fbf7f2, #f1eaea); */
     font-family: 'Karla', 'Helvetica', sans-serif;
     font-size: 100%;
     color: #444444;
 }
 
-body a {text-decoration: none;
+body a {
+    text-decoration: none;
+    background: -webkit-linear-gradient(rgb(255, 255, 255, 0) 80%, rgb(179, 219, 242) 20%);
+    border-radius: 2px;
 }
-body a:link {color: #536604;
+body a:link {color: #444444;}
+body a:visited {
+    color: #444444;
+    background: -webkit-linear-gradient(rgb(255, 255, 255, 0) 80%, rgb(179, 219, 242) 20%);
 }
-body a:visited {color: #536604;}
-body a:hover {
-    text-decoration-line: overline underline;
-    text-decoration-color: #bcbcbc;
-    text-underline-position: under;
-}
+body a:hover {background-color: #b3dbf2;}
+body a:active {background-color: #b3dbf2;}
 
 #wrapper {
     /* background-color: rgb(235, 173, 173); */
@@ -39,7 +42,7 @@ header {
 
 header a {
     text-decoration: none;
-    
+    background: none;
 }
 header a:link {color: #536604;}
 header a:visited {color: #536604;}
@@ -87,7 +90,8 @@ h1 {
 
 nav {
     border-top: 1px solid #bcbcbc;
-    background-color: rgb(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.9);
+    /* background-color: rgb(255, 255, 255, 0.9); */
     /* background: linear-gradient(rgb(255, 255, 255, 0.9), rgba(226, 230, 201, 0.9), rgb(255, 255, 255, 0.9)); */
     /* background: linear-gradient(rgb(255, 255, 255, 0.9), #fbfbfb, rgb(255, 255, 255, 0.9)); */
 }
@@ -97,6 +101,7 @@ nav a {
     display: block;
     color: #536604;
     text-decoration: none;
+    background: none;
 }
 nav a:link {
     color: #444444;
@@ -106,9 +111,11 @@ nav a:visited {color: #444444;}
 nav a:hover {
     color: #536604;
     text-decoration: none;
+    background: none;
 }
 nav a:active {
-
+    color: #536604;
+    background: none;
 }
 
 #menu {
@@ -154,13 +161,35 @@ main {
     border-left: 7px solid #536604;
     border-right: 7px solid #536604;
     text-align: justify;
+    /* background-color: #fff; */
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     /* box-shadow: -3px 3px 0px 0px rgba(68, 68, 68, .2); */
 }
 
+.button {
+    padding: 0.5em;
+    margin: 5px;
+    background: #536604;
+    border-radius: 3px;
+}
+#welcome a {
+    color: #ffffff; 
+}
+.button:hover {
+    background-color: #617704;
+}
+
+#welcome img {
+    width: 60%;
+}
+
+#welcome h2 {
+    font-family: 'Lobster Two'; 
+}
+
 #sidebar {
     display: none;
-    background-color: #b3dbf2;
+    /* background-color: #b3dbf2; */
 }
 
 form {
