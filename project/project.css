@@ -22,9 +22,12 @@ body a {
 body a:link {color: #444444;}
 body a:visited {
     color: #444444;
-    background: -webkit-linear-gradient(rgb(255, 255, 255, 0) 80%, rgb(179, 219, 242) 20%);
+    /* background: -webkit-linear-gradient(rgb(255, 255, 255, 0) 80%, rgb(179, 219, 242) 20%); */
 }
-body a:hover {background-color: #b3dbf2;}
+body a:hover {
+    /* background-color: #b3dbf2; */
+    background: -webkit-linear-gradient(rgb(255, 255, 255, 0) 30%, rgb(179, 219, 242) 20%);    
+}
 body a:active {background-color: #b3dbf2;}
 
 #wrapper {
@@ -47,8 +50,7 @@ header a {
 header a:link {color: #536604;}
 header a:visited {color: #536604;}
 header a:hover {
-    
-    text-decoration: none;    
+    text-shadow: 3px 5px 2px #b3dbf2;
 }
 
 #logo {
@@ -102,16 +104,19 @@ nav a {
     color: #536604;
     text-decoration: none;
     background: none;
+    text-shadow: 3px 5px 2px #b3dbf2;
 }
 nav a:link {
     color: #444444;
     text-decoration: none;
+    text-shadow: none;
 }
 nav a:visited {color: #444444;}
 nav a:hover {
     color: #536604;
     text-decoration: none;
     background: none;
+    text-shadow: 3px 5px 2px #b3dbf2;
 }
 nav a:active {
     color: #536604;
@@ -166,19 +171,6 @@ main {
     /* box-shadow: -3px 3px 0px 0px rgba(68, 68, 68, .2); */
 }
 
-.button {
-    padding: 0.5em;
-    margin: 5px;
-    background: #536604;
-    border-radius: 3px;
-}
-#welcome a {
-    color: #ffffff; 
-}
-.button:hover {
-    background-color: #617704;
-}
-
 #welcome img {
     width: 60%;
 }
@@ -187,9 +179,21 @@ main {
     font-family: 'Lobster Two'; 
 }
 
+.button {
+    padding: 0.5em;
+    margin: 5px;
+    background: #536604;
+    border-radius: 3px;
+}
+.button:link {color: #fff;}
+.button:visited {color: #fff;}
+.button:hover {background: #617704;}
+.button:active {}
+
+
+
 #sidebar {
     display: none;
-    /* background-color: #b3dbf2; */
 }
 
 form {
