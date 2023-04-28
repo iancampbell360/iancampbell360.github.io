@@ -274,16 +274,19 @@ form input, form textarea, fieldset input, fieldset textarea {
 body a {
     text-decoration: none;
     background: -webkit-linear-gradient(rgb(255, 255, 255, 0) 80%, rgb(179, 219, 242) 20%);
+    background: -moz-linear-gradient(rgb(255, 255, 255, 0) 80%, rgb(179, 219, 242) 20%);
+    background: linear-gradient(rgb(255, 255, 255, 0) 80%, rgb(179, 219, 242) 20%);
     border-radius: 2px;
 }
 body a:link {color: #444;}
 body a:visited {
     color: #444
-    /* background: -webkit-linear-gradient(rgb(255, 255, 255, 0) 80%, rgb(179, 219, 242) 20%); */
 }
 body a:hover {
     /* background-color: #b3dbf2; */
-    background: -webkit-linear-gradient(rgb(255, 255, 255, 0) 30%, rgb(179, 219, 242) 20%);    
+    background: -webkit-linear-gradient(rgb(255, 255, 255, 0) 30%, rgb(179, 219, 242) 20%);
+    background: -moz-linear-gradient(rgb(255, 255, 255, 0) 30%, rgb(179, 219, 242) 20%);
+    background: linear-gradient(rgb(255, 255, 255, 0) 30%, rgb(179, 219, 242) 20%);
 }
 body a:active {background-color: #b3dbf2;}
 
