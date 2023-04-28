@@ -52,12 +52,12 @@
         <nav>
             <ul id="menu">
                 <li><a>&#12448;Home&#12448;</a></li>
-                <li><a href="#">Library</a></li>
-                <li><a href="#">Resources</a></li>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="resources.html">Resources</a></li>
                 <!-- <li><a href="#">Events</a></li>
                 <li><a href="#">Trades</a></li>
                 <li><a href="#">Blog</a></li> -->
-                <li><a href="#">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li id="searchicon"><a href="#">&#128269;</a></li>
             </ul>
             <div id="search">
@@ -68,40 +68,73 @@
             </div>
         </nav>
         <div id="sidebar">
-            <p>Hi there!</p>
-            <p>This is my sidebar.</p>
-            <p>Try it on left and right, see which is better.</p>
+            <form action="mailto:ian.campbell@usu.edu" method="post">
+                    <label for="email" class="strong">Sign up for our email newsletter for new skills, posts, and more!</label>
+                    <input type="email" id="email" name="email">
+                    <input type="submit" class="button" value="Sign up">
+            </form>
+            <div class="ad">
+                Placeholder for Advertisements
+            </div>
         </div>
         
         <main>
             <div id="welcome">
-                
-                <h2>Hello there! Yes, you!</h2>
-                <p>Wondering what this site is all about?</p>
-                <p>We're kind of like Skillshare, but for forgotten skills and life lessons.</p>
+                <div class="overlay">
+                    <h2>Hello there! Yes, you!</h2>
                     
-                <p>What sets us apart is the kind of people who contribute here. If we were a garden, we would have measured boundaries, deep roots, and fruitful vines. You can decide for yourself whether that's worth anything.</p>
-                <p>We invite you to browse our library of shared learning, add to it by sharing your own learning, or request that someone share some learning you lack.</p>
-                <p>Help us build a community that builds individuals.</p>
-                <a href="#" class="button">Browse our library</a>
-                <a href="#" class="button">Share your learning</a>
-                <a href="#" class="button">Request learning</a>
-
-                <!-- <img src="images/tree.png" alt="tree"> -->
+                    <span class="strong">
+                        <p>Wondering what this site is all about? We're kind of like Skillshare, but for forgotten skills and life lessons.</p>
+        
+                        <p>We invite you to browse our library of shared learning, add to it by sharing your own learning, or request that someone share some learning you lack.</p>
+                    </span>
+    
+                    <div class="buttongroup">
+                        <a href="#" class="button">Browse our library</a>
+                        <a href="#" class="button">Share your learning</a>
+                        <a href="#" class="button">Request learning</a>
+                    </div>
+                </div>
             </div>
             
-            
-            <h3>What is <a href="#">Man of Measure?</a></h3>
-            <p>This site is kind of like Skillshare, but for forgotten skills and life lessons.</p>
-            <h3>Isn't this site a bit superfluous? I can find all this information elsewhere on the internet.</h3>
-            <p>What sets us <a href="#">apart</a> is the kind of people who contribute here. If we were a garden, we would have measured boundaries, deep roots, and fruitful vines. You can decide for yourself whether that's worth anything.</p>
-            <h3>Will I benefit from this site?</h3>
-            <p>If you're a dig-in-the-dirt, study-the-stars kind of person, we suspect you'll get a thing or two from this site.</p>
-            <p>We invite you to browse our library of shared learning, add to it by sharing your own learning, or request that someone share some learning you lack.</p>
-            <p>Help us build a community that builds individuals.</p>
-            
-            
+            <h2>Welcome!</h2>
+            <p class="strong">Do you have skills? We want to hear them!</p>
                 
+            <p><a href="library.html">Help us build a community that builds individuals.</a></p>
+
+            <p>What sets us apart is the kind of people who contribute here. If we were a garden, we would have measured boundaries, deep roots, and fruitful vines. You can decide for yourself whether that's worth anything.</p>
+
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem fugit harum quae eum! Impedit at commodi eius accusamus nam error, aut voluptatem, sequi officiis cumque suscipit minus, ea eveniet id.
+            Culpa sunt architecto laborum inventore impedit nostrum saepe minus quidem, repudiandae et eos atque, praesentium laudantium tenetur at dolores. Adipisci officia voluptates eveniet quasi quisquam quod autem magni nemo ducimus?
+            Necessitatibus optio, incidunt exercitationem rerum impedit repellat? Dolorum dolor eum nemo dicta voluptas eius in, earum totam, iusto ex optio atque voluptates et sed maiores alias quibusdam natus, a deleniti.
+            
+            <h2>Recent and Trending Skills</h2>
+            <div class="featured">
+                <div class="post">
+                    <img src="images/posts/window-garden.jpg" alt="window garden" class="postimg">
+                    <div>
+                        <h3 class="posttitle">Grow a Window Garden</h3>
+                        <p class="postdescription">You can grow a garden inside! All you need is a south-facing window, a desk, and a little determination.</p>
+                        <a href="404.html" class="button">Learn this skill</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="images/posts/garden-budget.jpg" alt="college garden" class="postimg">
+                    <div>
+                        <h3 class="posttitle">Gardening on a Budget</h3>
+                        <p class="postdescription">Gardening can get expensive, and I'm a poor college student. Here's how you can grow a garden on the cheap.</p>
+                        <a href="404.html" class="button">Learn this skill</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="images/posts/pie-decorating.jpg" alt="latice banana cream pie" class="postimg">
+                    <div>
+                        <h3 class="posttitle">How to Decorate a Pie</h3>
+                        <p class="postdescription">Techniques that will blow your family away at Thanksgiving dinner.</p>
+                        <a href="404.html" class="button">Learn this skill</a>
+                    </div>
+                </div>
+            </div>
             
                 
             
@@ -110,16 +143,29 @@
             
         </main>
         <footer>
-            Copyright &copy; 2023 Ian Campbell<br>
-            <a href="mailto:ian.campbell@usu.edu">ian.campbell@usu.edu</a> <br>
-            <a class="mobile" href="tel:888-555-5555">888-555-5555</a>
-            <span class="desktop">888-555-5555</span>
             <ul>
-                <li><a href="">Give feedback</a></li>
-                <li><a href="">Donate</a></li>
-                <li><a href="">Contact</a></li>
-                <li><a href="">Sitemap</a></li>
+                <li><a href="submit.html">Give feedback</a></li>
+                <li><a href="404.html">Donate</a></li>
+                <li><a href="about.html">Contact</a></li>
+                <li><a href="404.html">Sitemap</a></li>
             </ul>
+
+            <div id="footerinfo">
+                <div>
+                    Copyright &copy; 2023 Ian Campbell
+                </div>
+                <div>
+                    <a href="mailto:ian.campbell@usu.edu">ian.campbell@usu.edu</a>
+                </div>
+                <div>
+                    <a class="mobile" href="tel:888-555-5555">888-555-5555</a>
+                    <span class="desktop">888-555-5555</span>
+                </div>
+                <div>
+                    <p id="dateupdate"></p>
+                    <script src="js/dateupdate.js"></script>
+                </div>
+            </div>
         </footer>
     </div>
 </body>

@@ -1,5 +1,15 @@
-/* Add one more JavaScript */
-
+/* Placeholder text in email input. */
+/* $(document).ready(function () {
+    $("#email").val("Enter your email");
+    $("input").focus(function () {
+        $("#email").css("background-color", "#eee");
+        $("#email").val(null);
+    });
+    $("input").blur(function () {
+        $("#email").css("background-color", "#fff");
+        $("#email").val("Enter your email");
+    });
+}); */
 
 /* Search Functionality */
 
